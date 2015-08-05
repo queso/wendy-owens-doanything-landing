@@ -362,6 +362,10 @@ section.main-menu nav.navbar-default .navbar-header .navbar-brand div.title h1 {
   transform: translate(0%, -50%);
   top: 50%;
 }
+section.main-menu nav.navbar-default .navbar-header .navbar-brand img.logo {
+  padding: 5px 0;
+  max-height: 100px;
+}
 section.main-menu nav.navbar-default .navbar-header .navbar-toggle {
   position: absolute;
   top: 50%;
@@ -378,7 +382,6 @@ section.main-menu nav.navbar-default .navbar-header .navbar-toggle {
 */
 section.home {
   min-height: 500px;
-  background-color: gray;
 }
 section.home .centered {
   text-align: center;
