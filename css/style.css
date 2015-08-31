@@ -454,7 +454,10 @@ section.home div.slide p {
   margin: 0 0 35px 0px;
   padding: 0;
 }
-section.home div.slide input[type=text] {
+section.home div.slide p.no-margin {
+  margin-bottom: 10px;
+}
+section.home div.slide input[type=text], section.home div.slide input[type=email] {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -469,8 +472,18 @@ section.home div.slide input[type=text] {
   display: block;
   margin: 5px 0px;
 }
+.subscribe-radio-wrapper {
+  margin-bottom: 15px;
+}
+.subscribe-radio-wrapper label {
+  margin-left: 5px;
+  margin-right: 7px;
+}
 section.home div.slide input.email {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+section.home div.slide .red-button {
+  border: none;
 }
 section.home div.slide a.red-button {
   margin-left: 0px;
