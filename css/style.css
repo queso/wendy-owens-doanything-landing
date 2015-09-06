@@ -488,8 +488,8 @@ section.home div.slide .red-button {
 section.home div.slide a.red-button {
   margin-left: 0px;
 }
-.mce-responses div.response {
-  margin-top: 15px;
+.mce-responses .response {
+  margin-top: 25px;
 }
 
 /*------------------------------------------------------------------
