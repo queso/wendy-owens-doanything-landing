@@ -1,0 +1,63 @@
+<section class="home" >
+<div class="coverBgImage" style="">
+
+  <div id="home-carousel" class="carousel slide slideShowHeight" data-ride="carousel">
+    <!-- Indicators -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="slide">
+          <div class="container">
+            <div class="col-md-6 col-sm-12 col-xs-12 slideShowHeight">
+              <div class="vert-center text-info">
+                <h1 >Get your free</h1>
+                <h2>eBook</h2>
+                <div class="well">
+                  <form action="//wendy-owens.us2.list-manage.com/subscribe/post?u=3ceac270e21b676868f5accae&amp;id=a2fef99b33"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" role="form" novalidate>
+                    <div>
+                      <input type="email" value="" name="EMAIL" class="required email" placeholder="Email Address">
+                    </div>
+                    <div class="mc-field-group subscribe-radio-wrapper">
+                      <p class="no-margin">Which genres do you like?</p>
+
+                      <input type="radio" name="MMERGE1" id="mce-MMERGE1-0" value="New Adult Books">
+                      <label for="mce-MMERGE1-0">
+                        New Adult Books
+                      </label>
+
+                      <input type="radio" name="MMERGE1" id="mce-MMERGE1-1" value="Fantasy Books">
+                      <label for="mce-MMERGE1-1">
+                        Fantasy Books
+                      </label>
+
+                      <input type="radio" name="MMERGE1" id="mce-MMERGE1-2" value="Both">
+                      <label for="mce-MMERGE1-2">
+                        Both
+                      </label>
+                    </div>
+                    <input type="hidden" value="" name="MMERGE2" id="bookName">
+                    <input type="hidden" value="{{ page.genre }}" name="MMERGE3" id="genre" >
+                    <input type="submit" class="red-button" value="Get Your Copy Now" id="mc-embedded-subscribe" name="subscribe" />
+                    <div id="mce-responses" class="clear">
+                      <div class="response alert alert-danger" id="mce-error-response" style="display:none"></div>
+                      <div class="response alert alert-warning" id="mce-success-response" style="display:none"></div>
+                    </div>
+                  </form>
+                </div>
+                <!-- <a href="#" class="black-button">PURCHASE eBOOK   $88</a> -->
+              </div>
+            </div>
+            <div class="col-md-6 book-image hidden-sm hidden-xs slideShowHeight " >
+              <img src="{{ page.image }}" class="vert-center img-responsive" alt="Do Anything book" title="Do Anything book"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
