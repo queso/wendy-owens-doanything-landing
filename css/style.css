@@ -382,6 +382,10 @@ section.main-menu nav.navbar-default .navbar-header .navbar-toggle {
 */
 section.home {
   min-height: 500px;
+  margin: 50px 0 65px 0;
+}
+section.home .book-image {
+  margin-top: 75px;
 }
 section.home .centered {
   text-align: center;
