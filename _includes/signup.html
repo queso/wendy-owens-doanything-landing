@@ -14,38 +14,29 @@
                 <h1 >Get your free</h1>
                 <h2>eBook</h2>
                 <div class="well">
-                  <form action="//wendy-owens.us2.list-manage.com/subscribe/post?u=3ceac270e21b676868f5accae&amp;id=a2fef99b33"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                    target="_blank" role="form" novalidate>
-                    <div>
-                      <input type="email" value="" name="EMAIL" class="required email" placeholder="Email Address">
-                    </div>
-                    <div class="mc-field-group subscribe-radio-wrapper">
-                      <p class="no-margin">Which genres do you like?</p>
+                  <!-- NEWSLETTER FORM -->
+                  <form class="form-horizontal" action="https://www.getdrip.com/forms/1513607/submissions" method="post" data-drip-embedded-form="1513607" name="mc-embedded-subscribe-form" class="validate">
+                    <div class="form-group">
+                      <div class="col-md-10 col-offset-md-2 input">
+                        <label class="sr-only" for="fields[first_name]">First Name</label>
+                        <input type="text" id="name" name="fields[first_name]" required placeholder="First Name">
+                      </div>
 
-                      <input type="radio" name="MMERGE1" id="mce-MMERGE1-0" value="New Adult Books">
-                      <label for="mce-MMERGE1-0">
-                        New Adult Books
-                      </label>
+                      <div class="col-md-10 col-offset-md-2 input">
+                        <label class="sr-only" for="fields[email]">Email</label>
+                        <input type="email" required placeholder="Email Address" name="fields[email]">
+                      </div>
 
-                      <input type="radio" name="MMERGE1" id="mce-MMERGE1-1" value="Fantasy Books">
-                      <label for="mce-MMERGE1-1">
-                        Fantasy Books
-                      </label>
+                      <input type="hidden" value="{{ page.genre }}" name="tags[]" id="genre" >
+                      <input type="hidden" value="" name="book_signed_up_from" id="bookName">
 
-                      <input type="radio" name="MMERGE1" id="mce-MMERGE1-2" value="Both">
-                      <label for="mce-MMERGE1-2">
-                        Both
-                      </label>
-                    </div>
-                    <input type="hidden" value="" name="MMERGE2" id="bookName">
-                    <input type="hidden" value="{{ page.genre }}" name="MMERGE3" id="genre" >
-                    <input type="submit" class="red-button" value="Get Your Copy Now" id="mc-embedded-subscribe" name="subscribe" />
-                    <div id="mce-responses" class="clear">
-                      <div class="response alert alert-danger" id="mce-error-response" style="display:none"></div>
-                      <div class="response alert alert-warning" id="mce-success-response" style="display:none"></div>
+                      <div style="margin-top: 15px" class="col-md-5">
+                        <button type="submit" class="red-button">Get your copy now</button>
+                      </div>
                     </div>
                   </form>
+
+                  <!-- END -->
                 </div>
                 <!-- <a href="#" class="black-button">PURCHASE eBOOK   $88</a> -->
               </div>
