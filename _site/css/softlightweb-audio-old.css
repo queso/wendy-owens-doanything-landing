@@ -1,0 +1,92 @@
+/*
+Name: SoftLightWeb Audio Player
+Author: Dan Lutescu ( www.softlightweb.com )
+Version: 1.0.0
+*/
+div.softlightweb-audio {
+  background-color: #eff0f1;
+  color: #7d828c;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 20px;
+  padding: 18px;
+}
+div.softlightweb-audio div.audio-content {
+  display: inline-block;
+  width: 100%;
+}
+div.softlightweb-audio div.audio-content ul {
+  padding: 0;
+  margin: 0;
+}
+div.softlightweb-audio div.audio-content a {
+  color: #7d828c;
+}
+div.softlightweb-audio div.audio-content a:hover {
+  color: #f0145a;
+}
+div.softlightweb-audio div.audio-content div.controls,
+div.softlightweb-audio div.audio-content div.audio-progress,
+div.softlightweb-audio div.audio-content div.audio {
+  float: left;
+}
+div.softlightweb-audio div.audio-content div.controls {
+  width: 35%;
+}
+@media (min-width: 768px) {
+  div.softlightweb-audio div.audio-content div.controls {
+    width: 15%;
+  }
+}
+div.softlightweb-audio div.audio-content div.audio-progress {
+  height: 20px;
+  padding: 0px 0px 0px 10px;
+  margin: 0;
+  width: 40%;
+}
+@media (min-width: 768px) {
+  div.softlightweb-audio div.audio-content div.audio-progress {
+    width: 75%;
+  }
+}
+div.softlightweb-audio div.audio-content div.audio-progress div.duration-wrapper {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 9px 0px;
+}
+div.softlightweb-audio div.audio-content div.audio-progress div.duration-wrapper div.current-duration {
+  background-color: #f0145a;
+  height: 100%;
+  width: 0%;
+}
+div.softlightweb-audio div.audio-content div.audio {
+  text-align: right;
+  width: 25%;
+}
+@media (min-width: 768px) {
+  div.softlightweb-audio div.audio-content div.audio {
+    width: 10%;
+  }
+}
+div.softlightweb-audio div.audio-content div.volume-control {
+  text-align: right;
+  display: none;
+}
+div.softlightweb-audio div.audio-content div.volume-control .slider {
+  width: 150px;
+}
+div.softlightweb-audio div.audio-content div.volume-control .slider div.slider-selection {
+  background: #f0145a;
+  height: 5px;
+  top: 50%;
+}
+div.softlightweb-audio div.audio-content div.volume-control .slider div.slider-track {
+  background: white;
+  height: 5px;
+  top: 50%;
+}
+div.softlightweb-audio div.audio-content div.volume-control .slider div.slider-handle {
+  background: #7d828c;
+  top: 45%;
+}

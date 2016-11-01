@@ -1,0 +1,127 @@
+/*
+Name: SoftLightWeb Audio Player
+Author: Dan Lutescu ( www.softlightweb.com )
+Version: 1.0.0
+*/
+
+
+div.softlightweb-audio
+{
+	@bg-color: #eff0f1;
+	@buttons-color: #7d828c;
+	@duration-bg: #ffffff;
+	@progress-color: #f0145a;
+
+
+	background-color: @bg-color;
+	color: @buttons-color;
+	width: 100%;
+	font-size: 14pt;
+	line-height: 20px;
+	padding: 18px;
+
+	div.audio-content
+	{
+		display: inline-block;
+		width: 100%;
+
+		ul
+		{
+			padding:0;
+			margin: 0;
+		}
+
+		a
+		{
+			color: @buttons-color;
+			&:hover
+			{
+				color: @progress-color;
+			}
+		}
+
+		div.controls, div.audio-progress, div.audio
+		{
+			float: left;
+		}
+
+		div.controls
+		{
+			width: 35%;
+			@media(min-width:768px)
+			{
+				width: 15%;
+			}
+		}
+
+		div.audio-progress
+		{
+			height: 20px;
+			padding: 0px 0px 0px 10px;
+			margin: 0;
+			width: 40%;
+
+			@media(min-width:768px)
+			{
+				width: 75%;
+			}
+
+			div.duration-wrapper
+			{
+				width: 100%;
+				height: 2px;
+				background-color: @duration-bg;
+				margin: 9px 0px;
+
+				div.current-duration
+				{
+					background-color: @progress-color;
+					height: 100%;
+					width: 0%;
+				}
+			}
+		}
+
+		div.audio
+		{
+			text-align: right;
+			width: 25%;
+			@media(min-width:768px)
+			{
+				width: 10%;
+			}
+		}
+
+		div.volume-control
+		{
+			text-align: right;
+			display: none;
+
+			.slider
+			{
+				width: 150px;
+
+				div.slider-selection
+				{
+					background: @progress-color;
+					height: 5px;
+					top:50%;
+				}
+				div.slider-track{
+					background: white;
+					height: 5px;
+					top:50%;
+				}
+				div.slider-handle
+				{
+					background: @buttons-color;
+					top:45%;
+
+				}
+			}
+		}
+
+
+	}
+
+}
